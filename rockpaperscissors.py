@@ -38,6 +38,13 @@ for x in range(0, numgames):
     elif userinput == "scissors" and computerchoice == "rock":
         print("You selected",userinput,"and the computer selected",computerchoice,"You lost this round!")
         computerscore += 1
+    if userinput == "rock" and computerchoice == "rock":
+        print("You selected",userinput,"and the computer selected",computerchoice,"You tied this round.")
+    elif userinput == "scissors" and computerchoice == "scissors":
+        print("You selected",userinput,"and the computer selected",computerchoice,"You tied this round.")
+    if userinput == "paper" and computerchoice == "paper":
+        print("You selected",userinput,"and the computer selected",computerchoice,"You tied this round.")
+
 
 if userscore > computerscore:
     userwin = True
